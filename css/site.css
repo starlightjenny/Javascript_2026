@@ -104,8 +104,6 @@ p {
 	margin-bottom: 10px;
 }
 
-
-
 .nav {
 	margin: 10px 0 0 100px;
 
@@ -117,7 +115,7 @@ p {
 
 .nav a {
 	display: inline-block;
-	vertical-align: middle;
+	text-align: center;
 	font-family: Courier New, Courier, monospace;
 	font-size: 12px;
 	color: #646464;
