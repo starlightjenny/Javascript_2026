@@ -140,8 +140,10 @@ p {
 }
 
 .icon {
-	width: 40px;
+	width: 120px;
 	height: auto;
+	display: block;
+	margin: 0 auto;
 }
 
 @media (max-width: 600px) {
