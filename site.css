@@ -1,0 +1,154 @@
+/* reset browser styles */
+html, body, div, h1, h2, h3, h4, h5, h6, p, footer, header {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+
+footer, header, nav {
+	display: block;
+}
+
+body {
+	line-height: 1.2;
+	padding: 60px 0;
+	background-color: #FEFAF6;
+}
+
+/* @font-face */
+
+
+h1 {
+	font-family: 'League Gothic', Arial, sans-serif;
+	font-weight: normal;
+}
+
+h2 {
+	font-family: 'ColaborateMediumRegular', Arial, sans-serif;
+	font-weight: normal;
+	margin-bottom: 5px;
+	font-size: 20px;
+}
+
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 10px 0 5px 0;
+	border-bottom: 1px solid #000000;
+	background-color: #FEFAF6;
+	text-align: center;
+	color: #000000;
+	text-transform: uppercase;
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 28px;
+	letter-spacing: 2px;
+	z-index: 1000;
+}
+
+
+.main {
+	padding: 15px;
+	border-bottom: solid 1px #FFFFFF80;
+	text-align: justify;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-size: 12px;
+}
+
+.main h1 {
+	font-size: 32px;
+	font-style: italic;
+	color: #000000;
+	text-shadow: 1px 1px 1px #FFFFFF;
+	border-bottom: solid 1px #646464;
+	margin-bottom: 0.5em;
+}
+
+#content {
+    max-width: 760px;
+    margin: 0 auto;
+    position: relative;
+    padding: 0 15px;
+}
+
+footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background-color: #1B2D5E;
+	z-index: 1000;
+}
+
+footer p {
+	text-align: center;
+	font-size: 14px;
+	font-family: 'ColaborateLightRegular', Arial, sans-serif;
+	padding: .5em .25em .5em 1em;
+	color: #FFFFFF;
+	margin: 0;
+}
+
+footer a {
+	color: #C8C8C8;
+}
+
+p {
+	font-size: 18px;
+	color: #646464;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	line-height: 125%;
+	margin-bottom: 10px;
+}
+
+
+
+.nav {
+	margin: 10px 0 0 100px;
+}
+
+.nav li {
+	display: inline-block;
+}
+
+.nav a {
+	display: inline-block;
+	font-family: Courier New, Courier, monospace;
+	font-size: 12px;
+	color: #646464;
+	text-transform: uppercase; 
+	padding: .25em .5em;
+	-webkit-transition: all .25s ease-in;
+	-moz-transition: all .25s ease-in;
+	-o-transition: all .25s ease-in;
+	transition: all .25s ease-in;
+	cursor: pointer;
+}
+
+.nav a:hover {
+	background-color: #FFFFFFD9;
+	color: #000000;
+}
+
+.highlight {
+	color: #1B2D5E;
+	font-weight: bold;
+}
+
+@media (max-width: 600px) {
+	header {
+		font-size: 22px;
+	}
+
+	.main h1 {
+		font-size: 26px;
+	}
+
+	p {
+		font-size: 16px;
+	}
+
+}
