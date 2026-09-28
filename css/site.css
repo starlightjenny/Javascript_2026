@@ -79,8 +79,7 @@ footer {
 	bottom: 0;
 	left: 0;
 	width: 100%;
-	background-color: #1B2D5E;
-	z-index: 1000;
+	border-top: 1px solid #000000;
 }
 
 footer p {
@@ -88,7 +87,7 @@ footer p {
 	font-size: 14px;
 	font-family: 'Courier New';
 	padding: .5em .25em .5em 1em;
-	color: #FFFFFF;
+	color: #000000;
 	margin: 0;
 }
 
