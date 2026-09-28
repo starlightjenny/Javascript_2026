@@ -108,6 +108,7 @@ p {
 
 .nav {
 	margin: 10px 0 0 100px;
+	vertical-align: middle;
 }
 
 .nav li {
@@ -125,7 +126,7 @@ p {
 	-moz-transition: all .25s ease-in;
 	-o-transition: all .25s ease-in;
 	transition: all .25s ease-in;
-	cursor: pointer;
+
 }
 
 .nav a:hover {
