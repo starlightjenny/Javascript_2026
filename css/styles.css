@@ -1,0 +1,98 @@
+
+body{
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    max-width: 100%;    
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, rgb(204, 204, 204), rgb(38, 93, 138));
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+
+/*Section Headings*/
+h2 {
+    text-transform: lowercase;
+    font-size: 30px;
+    font-family: Georgia;
+    text-align: center;
+    color: #3f4b72;
+    border-bottom: 1px solid #000;
+}
+
+/* MAIN CONTENT */
+main {
+    padding: 20px;
+    background-color: #ffffff;
+
+}
+
+main p {
+    line-height: 1.5;
+    text-align: justify;
+    font-size: 12px;
+    font-family: 'Lexend Deca', sans-serif; 
+    padding: 10px;
+}
+
+
+/* Mobile: Small screens (under 768px) */
+@media (max-width: 767px) {
+    body {
+        margin: 0 15px;
+
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    main p {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+}
+
+/* Tablet: Medium screens (768px to 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    main {
+        padding: 20px;
+    }
+
+    main p {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+
+}
+
+/* Desktop: Large screens (1024px and up) */
+@media (min-width: 1024px) {
+    body {
+         max-width: 1200px;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    main p {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+}
+
+
+
+
+
+

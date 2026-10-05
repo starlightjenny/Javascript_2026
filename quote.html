@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Quote of the Day</title>
+	<link rel="stylesheet" href="css/styles.css">
+	<script src="js/script.js"></script>
+	<script>
+		var guest_number = prompt("Please enter a number: ");
+		var quotesoftheday = [
+			'"It is better to be hated for what you are than to be loved for what you are not." - Andre Gide, Autumn Leaves',
+			'"The fear of death follows from the fear of life. A man who lives fully is prepared to die at any time." - Mark Twain',
+			'“Life is not a matter of holding good cards, but of playing a poor hand well.” ― Robert Louis Stevenson',
+			'“Theres nowhere you can be that isnt where you are meant to be.” ― John Lennon',
+			'“To perceive is to suffer.” ― Aristotle'
+		]
+
+		var guest_website = prompt("Please enter your favorite website's URL: ");
+		var websitelists = [
+			"https://www.disneyplus.com",
+			"https://www.instagram.com",
+			"https://www.youtube.com"
+		]
+
+		if (guest_website === null || guest_website === "") {
+			guest_website = "https://www.google.com";
+		}
+
+		var original_websites = websitelists.slice(); // Create a copy of the original list
+
+		websitelists.push(guest_website);
+		websitelists.shift();
+
+
+	</script>
+	<link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<main>
+		<h2>Random Quote of the Day</h2>
+		<p>
+			<script>
+				document.write(quotesoftheday[guest_number % quotesoftheday.length]);
+			</script>
+		</p>
+
+	<h2>Favorite Websites</h2>
+	<p>
+		<script>
+			document.write("Original Website List: <br><br>");
+			document.write("<a href='" + original_websites[0] + "'>" + original_websites[0] + "</a><br>");
+			document.write("<a href='" + original_websites[1] + "'>" + original_websites[1] + "</a><br>");
+			document.write("<a href='" + original_websites[2] + "'>" + original_websites[2] + "</a><br>");
+			document.write("<br><br>Updated Website List: <br><br>");
+			document.write("<a href='" + websitelists[0] + "'>" + websitelists[0] + "</a><br>");
+			document.write("<a href='" + websitelists[1] + "'>" + websitelists[1] + "</a><br>");
+			document.write("<a href='" + websitelists[2] + "'>" + websitelists[2] + "</a><br>");
+		</script>
+	</p>
+
+		
+	</main>
+
+</body>
+</html>
