@@ -1,0 +1,187 @@
+
+body{
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    max-width: 100%;    
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, rgb(255, 255, 255), #225750);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+
+/*Section Headings*/
+h2 {
+    font-size: 24px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: #225750;
+    letter-spacing: 2px;
+    margin: 30px 0 10px;
+}
+
+/* MAIN CONTENT */
+main {
+    width: 80%;
+    padding: 20px;
+    display: flex;
+    gap: 40px;
+    background-color: #ffffff;
+    border-top: 8px solid #225750;
+    box-shadow: 0 10px 30px rgba(34, 87, 80, 0.25);
+}
+
+main p {
+    line-height: 1.2;
+    text-align: center;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    padding: 10px;
+}
+
+
+/* Greeting uses its own font */
+#greeting {
+    font-size: 40px;
+    font-family: Georgia, serif;
+    font-style: italic;
+    letter-spacing: 1px;
+}
+
+/* Date, user information, quote and results all share the same text style */
+#date,
+#username,
+#domain,
+#quote {
+    font-style: normal;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #225750;
+}
+
+/* Username and domain */
+#username,
+#domain {
+    margin: 0;
+    padding: 4px 10px;
+}
+
+/* Quote of the day */
+#quote {
+    background-color: #eefaf8;
+    margin: 0 10%;
+    padding: 15px 20px;
+}
+
+/* Left side: date, greeting, user information and quote */
+.content {
+    flex: 3;
+}
+
+/* Right side: quiz results table, centered top to bottom */
+.results {
+    flex: 2;
+    align-self: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #225750;
+    text-align: center;
+}
+
+th,
+td {
+    padding: 10px;
+}
+
+th {
+    border-bottom: 2px solid #225750;
+}
+
+/* Score and percentage rows */
+tfoot tr:first-child td {
+    border-top: 2px solid #225750;
+}
+
+/* Mobile: Small screens (under 768px) */
+@media (max-width: 767px) {
+    body {
+        margin: 0 15px;
+
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    #greeting {
+        font-size: 26px;
+    }
+
+    main {
+        width: 100%;
+        padding: 20px;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    table {
+        font-size: 10px;
+    }
+
+    main p {
+        font-size: 10px;
+        padding: 10px;
+    }
+
+}
+
+/* Tablet: Medium screens (768px to 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    main {
+        padding: 20px;
+    }
+
+    main p {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+
+}
+
+/* Desktop: Large screens (1024px and up) */
+@media (min-width: 1024px) {
+    body {
+         max-width: 1200px;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    main p {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+}
+
+
+
+
+
+
